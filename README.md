@@ -1,4 +1,4 @@
-# Chancellor Galiza Project 🚀
+# Entjava Project 🚀
 
 This Spring Boot Application contains five end points :
 
