@@ -15,10 +15,4 @@ public class MyController {
         return true;
     }
 
-    @GetMapping("/name/{name}")
-    public Name processName(@PathVariable String name) {
-        return new Name();
-    }
-
-
 }
