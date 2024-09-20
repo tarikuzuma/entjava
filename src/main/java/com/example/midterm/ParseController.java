@@ -2,6 +2,7 @@ package com.example.midterm;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ import java.util.Map;
 @RequestMapping("parse")
 public class ParseController {
     
+    @CrossOrigin(origins = "*")
     @GetMapping("/name")
     public ResponseEntity<?> processName(@RequestParam String name) {
         NameService nameService = new ConcreteNameService();
